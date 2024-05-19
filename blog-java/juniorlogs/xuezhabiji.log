@@ -1,0 +1,427 @@
+2024-05-15 19:28:10.103  INFO 15524 --- [main] c.Application                            : Starting Application on computer with PID 15524 (D:\blog-master\blog-java\target\classes started by Administrator in D:\blog-master\blog-java)
+2024-05-15 19:28:10.109  INFO 15524 --- [main] c.Application                            : The following profiles are active: dev
+2024-05-15 19:28:12.078  INFO 15524 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 10000 (http)
+2024-05-15 19:28:12.084  INFO 15524 --- [main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-10000"]
+2024-05-15 19:28:12.084  INFO 15524 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2024-05-15 19:28:12.085  INFO 15524 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2024-05-15 19:28:12.147  INFO 15524 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2024-05-15 19:28:12.147  INFO 15524 --- [main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 2016 ms
+2024-05-15 19:28:12.445  INFO 15524 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2024-05-15 19:28:12.616  INFO 15524 --- [main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-10000"]
+2024-05-15 19:28:12.629  INFO 15524 --- [main] o.a.c.h.Http11NioProtocol                : Pausing ProtocolHandler ["http-nio-10000"]
+2024-05-15 19:28:12.629  INFO 15524 --- [main] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2024-05-15 19:28:12.632  INFO 15524 --- [main] o.a.c.h.Http11NioProtocol                : Stopping ProtocolHandler ["http-nio-10000"]
+2024-05-15 19:28:12.632  INFO 15524 --- [main] o.a.c.h.Http11NioProtocol                : Destroying ProtocolHandler ["http-nio-10000"]
+2024-05-15 19:28:12.633  INFO 15524 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-05-15 19:28:12.635 ERROR 15524 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 10000 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 10000 or configure this application to listen on another port.
+
+2024-05-15 19:28:12.637  INFO 15524 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2024-05-15 19:59:22.078  INFO 9316 --- [main] c.Application                            : Starting Application on computer with PID 9316 (D:\blog-master\blog-java\target\classes started by Administrator in D:\blog-master\blog-java)
+2024-05-15 19:59:22.082  INFO 9316 --- [main] c.Application                            : The following profiles are active: dev
+2024-05-15 19:59:23.896  INFO 9316 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 10000 (http)
+2024-05-15 19:59:23.901  INFO 9316 --- [main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-10000"]
+2024-05-15 19:59:23.902  INFO 9316 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2024-05-15 19:59:23.902  INFO 9316 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2024-05-15 19:59:23.952  INFO 9316 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2024-05-15 19:59:23.952  INFO 9316 --- [main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1854 ms
+2024-05-15 19:59:24.154  INFO 9316 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2024-05-15 19:59:24.248  INFO 9316 --- [main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-10000"]
+2024-05-15 19:59:24.255  INFO 9316 --- [main] o.a.c.h.Http11NioProtocol                : Pausing ProtocolHandler ["http-nio-10000"]
+2024-05-15 19:59:24.255  INFO 9316 --- [main] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2024-05-15 19:59:24.257  INFO 9316 --- [main] o.a.c.h.Http11NioProtocol                : Stopping ProtocolHandler ["http-nio-10000"]
+2024-05-15 19:59:24.257  INFO 9316 --- [main] o.a.c.h.Http11NioProtocol                : Destroying ProtocolHandler ["http-nio-10000"]
+2024-05-15 19:59:24.258  INFO 9316 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-05-15 19:59:24.260 ERROR 9316 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 10000 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 10000 or configure this application to listen on another port.
+
+2024-05-15 19:59:24.261  INFO 9316 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2024-05-15 20:00:04.851  INFO 12800 --- [main] c.Application                            : Starting Application on computer with PID 12800 (D:\blog-master\blog-java\target\classes started by Administrator in D:\blog-master\blog-java)
+2024-05-15 20:00:04.855  INFO 12800 --- [main] c.Application                            : The following profiles are active: dev
+2024-05-15 20:00:06.609  INFO 12800 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9090 (http)
+2024-05-15 20:00:06.613  INFO 12800 --- [main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9090"]
+2024-05-15 20:00:06.614  INFO 12800 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2024-05-15 20:00:06.614  INFO 12800 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2024-05-15 20:00:06.658  INFO 12800 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2024-05-15 20:00:06.658  INFO 12800 --- [main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1784 ms
+2024-05-15 20:00:06.858  INFO 12800 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2024-05-15 20:00:06.948  INFO 12800 --- [main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9090"]
+2024-05-15 20:00:06.959  INFO 12800 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9090 (http) with context path ''
+2024-05-15 20:00:06.960  INFO 12800 --- [main] c.Application                            : Started Application in 2.324 seconds (JVM running for 2.886)
+2024-05-15 20:24:35.969  INFO 12800 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2024-05-15 20:54:46.652  INFO 19492 --- [main] c.Application                            : Starting Application on computer with PID 19492 (D:\blog-master\blog-java\target\classes started by Administrator in D:\blog-master\blog-java)
+2024-05-15 20:54:46.656  INFO 19492 --- [main] c.Application                            : The following profiles are active: dev
+2024-05-15 20:54:48.376  INFO 19492 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9090 (http)
+2024-05-15 20:54:48.381  INFO 19492 --- [main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9090"]
+2024-05-15 20:54:48.381  INFO 19492 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2024-05-15 20:54:48.381  INFO 19492 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2024-05-15 20:54:48.427  INFO 19492 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2024-05-15 20:54:48.427  INFO 19492 --- [main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1753 ms
+2024-05-15 20:54:48.623  INFO 19492 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2024-05-15 20:54:48.721  INFO 19492 --- [main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9090"]
+2024-05-15 20:54:48.731  INFO 19492 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9090 (http) with context path ''
+2024-05-15 20:54:48.733  INFO 19492 --- [main] c.Application                            : Started Application in 2.276 seconds (JVM running for 2.833)
+2024-05-15 20:55:01.067  INFO 19492 --- [http-nio-9090-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-15 20:55:01.067  INFO 19492 --- [http-nio-9090-exec-2] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2024-05-15 20:55:01.070  INFO 19492 --- [http-nio-9090-exec-2] o.s.w.s.DispatcherServlet                : Completed initialization in 3 ms
+2024-05-15 20:55:01.085  WARN 19492 --- [http-nio-9090-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.study.pojo.Result com.study.controller.LoginController.login(com.study.pojo.User)]
+2024-05-15 21:00:36.402  WARN 19492 --- [http-nio-9090-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.study.pojo.Result com.study.controller.LoginController.login(com.study.pojo.User)]
+2024-05-15 21:03:16.974  WARN 19492 --- [http-nio-9090-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.study.pojo.Result com.study.controller.LoginController.login(com.study.pojo.User)]
+2024-05-15 21:03:58.619  WARN 19492 --- [http-nio-9090-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.study.pojo.Result com.study.controller.LoginController.login(com.study.pojo.User)]
+2024-05-15 21:07:55.338  WARN 19492 --- [http-nio-9090-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.study.pojo.Result com.study.controller.LoginController.login(com.study.pojo.User)]
+2024-05-15 21:13:46.628  INFO 19492 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2024-05-15 21:13:48.596  INFO 20804 --- [main] c.Application                            : Starting Application on computer with PID 20804 (D:\blog-master\blog-java\target\classes started by Administrator in D:\blog-master\blog-java)
+2024-05-15 21:13:48.600  INFO 20804 --- [main] c.Application                            : The following profiles are active: dev
+2024-05-15 21:13:50.380  INFO 20804 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9090 (http)
+2024-05-15 21:13:50.384  INFO 20804 --- [main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9090"]
+2024-05-15 21:13:50.385  INFO 20804 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2024-05-15 21:13:50.385  INFO 20804 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2024-05-15 21:13:50.432  INFO 20804 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2024-05-15 21:13:50.432  INFO 20804 --- [main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1813 ms
+2024-05-15 21:13:50.635  INFO 20804 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2024-05-15 21:13:50.730  INFO 20804 --- [main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9090"]
+2024-05-15 21:13:50.741  INFO 20804 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9090 (http) with context path ''
+2024-05-15 21:13:50.743  INFO 20804 --- [main] c.Application                            : Started Application in 2.365 seconds (JVM running for 2.944)
+2024-05-15 21:14:06.883  INFO 20804 --- [http-nio-9090-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-15 21:14:06.883  INFO 20804 --- [http-nio-9090-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2024-05-15 21:14:06.886  INFO 20804 --- [http-nio-9090-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 3 ms
+2024-05-15 21:14:06.902  WARN 20804 --- [http-nio-9090-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.study.pojo.Result com.study.controller.LoginController.login(com.study.pojo.User)]
+2024-05-15 21:14:42.042  INFO 20804 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2024-05-15 21:14:43.974  INFO 21024 --- [main] c.Application                            : Starting Application on computer with PID 21024 (D:\blog-master\blog-java\target\classes started by Administrator in D:\blog-master\blog-java)
+2024-05-15 21:14:43.978  INFO 21024 --- [main] c.Application                            : The following profiles are active: dev
+2024-05-15 21:14:45.749  INFO 21024 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9090 (http)
+2024-05-15 21:14:45.753  INFO 21024 --- [main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9090"]
+2024-05-15 21:14:45.754  INFO 21024 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2024-05-15 21:14:45.754  INFO 21024 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2024-05-15 21:14:45.803  INFO 21024 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2024-05-15 21:14:45.804  INFO 21024 --- [main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1808 ms
+2024-05-15 21:14:46.012  INFO 21024 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2024-05-15 21:14:46.105  INFO 21024 --- [main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9090"]
+2024-05-15 21:14:46.115  INFO 21024 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9090 (http) with context path ''
+2024-05-15 21:14:46.117  INFO 21024 --- [main] c.Application                            : Started Application in 2.345 seconds (JVM running for 2.915)
+2024-05-15 21:14:51.125  INFO 21024 --- [http-nio-9090-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-15 21:14:51.125  INFO 21024 --- [http-nio-9090-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2024-05-15 21:14:51.128  INFO 21024 --- [http-nio-9090-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 3 ms
+2024-05-15 21:14:51.142  WARN 21024 --- [http-nio-9090-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.study.pojo.Result com.study.controller.LoginController.login(com.study.pojo.User)]
+2024-05-15 21:14:52.255  WARN 21024 --- [http-nio-9090-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.study.pojo.Result com.study.controller.LoginController.login(com.study.pojo.User)]
+2024-05-15 21:15:15.582  INFO 21024 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2024-05-15 21:15:34.897  INFO 7900 --- [main] c.Application                            : Starting Application on computer with PID 7900 (D:\blog-master\blog-java\target\classes started by Administrator in D:\blog-master\blog-java)
+2024-05-15 21:15:34.901  INFO 7900 --- [main] c.Application                            : The following profiles are active: dev
+2024-05-15 21:15:36.679  INFO 7900 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9090 (http)
+2024-05-15 21:15:36.683  INFO 7900 --- [main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9090"]
+2024-05-15 21:15:36.684  INFO 7900 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2024-05-15 21:15:36.684  INFO 7900 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2024-05-15 21:15:36.729  INFO 7900 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2024-05-15 21:15:36.730  INFO 7900 --- [main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1809 ms
+2024-05-15 21:15:36.932  INFO 7900 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2024-05-15 21:15:37.025  INFO 7900 --- [main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9090"]
+2024-05-15 21:15:37.036  INFO 7900 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9090 (http) with context path ''
+2024-05-15 21:15:37.037  INFO 7900 --- [main] c.Application                            : Started Application in 2.348 seconds (JVM running for 2.898)
+2024-05-15 21:15:47.716  INFO 7900 --- [http-nio-9090-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-15 21:15:47.716  INFO 7900 --- [http-nio-9090-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2024-05-15 21:15:47.718  INFO 7900 --- [http-nio-9090-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 2 ms
+2024-05-15 21:15:47.733  WARN 7900 --- [http-nio-9090-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.study.pojo.Result com.study.controller.LoginController.login(com.study.pojo.User)]
+2024-05-15 21:17:10.997  INFO 7900 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2024-05-15 21:18:58.627  INFO 19764 --- [main] c.Application                            : Starting Application on computer with PID 19764 (D:\blog-master\blog-java\target\classes started by Administrator in D:\blog-master\blog-java)
+2024-05-15 21:18:58.631  INFO 19764 --- [main] c.Application                            : The following profiles are active: dev
+2024-05-15 21:19:00.413  INFO 19764 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9090 (http)
+2024-05-15 21:19:00.417  INFO 19764 --- [main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9090"]
+2024-05-15 21:19:00.418  INFO 19764 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2024-05-15 21:19:00.418  INFO 19764 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2024-05-15 21:19:00.462  INFO 19764 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2024-05-15 21:19:00.463  INFO 19764 --- [main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1814 ms
+2024-05-15 21:19:00.664  INFO 19764 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2024-05-15 21:19:00.756  INFO 19764 --- [main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9090"]
+2024-05-15 21:19:00.767  INFO 19764 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9090 (http) with context path ''
+2024-05-15 21:19:00.768  INFO 19764 --- [main] c.Application                            : Started Application in 2.342 seconds (JVM running for 2.889)
+2024-05-15 21:19:22.018  INFO 19764 --- [http-nio-9090-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-15 21:19:22.018  INFO 19764 --- [http-nio-9090-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2024-05-15 21:19:22.021  INFO 19764 --- [http-nio-9090-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 3 ms
+2024-05-15 21:19:22.037  WARN 19764 --- [http-nio-9090-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.study.pojo.Result com.study.controller.LoginController.login(com.study.pojo.User)]
+2024-05-15 21:22:03.219  WARN 19764 --- [http-nio-9090-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2024-05-15 21:23:15.995  INFO 19764 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2024-05-15 21:23:19.344  INFO 19412 --- [main] c.Application                            : Starting Application on computer with PID 19412 (D:\blog-master\blog-java\target\classes started by Administrator in D:\blog-master\blog-java)
+2024-05-15 21:23:19.348  INFO 19412 --- [main] c.Application                            : The following profiles are active: dev
+2024-05-15 21:23:21.134  INFO 19412 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9090 (http)
+2024-05-15 21:23:21.140  INFO 19412 --- [main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9090"]
+2024-05-15 21:23:21.141  INFO 19412 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2024-05-15 21:23:21.141  INFO 19412 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2024-05-15 21:23:21.188  INFO 19412 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2024-05-15 21:23:21.188  INFO 19412 --- [main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1822 ms
+2024-05-15 21:23:21.353  INFO 19412 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2024-05-15 21:23:21.489  INFO 19412 --- [main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9090"]
+2024-05-15 21:23:21.500  INFO 19412 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9090 (http) with context path ''
+2024-05-15 21:23:21.501  INFO 19412 --- [main] c.Application                            : Started Application in 2.362 seconds (JVM running for 2.897)
+2024-05-15 21:23:25.636  INFO 19412 --- [http-nio-9090-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-15 21:23:25.636  INFO 19412 --- [http-nio-9090-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2024-05-15 21:23:25.639  INFO 19412 --- [http-nio-9090-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 3 ms
+2024-05-15 21:41:45.810  INFO 19412 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2024-05-15 21:41:47.766  INFO 20268 --- [main] c.Application                            : Starting Application on computer with PID 20268 (D:\blog-master\blog-java\target\classes started by Administrator in D:\blog-master\blog-java)
+2024-05-15 21:41:47.770  INFO 20268 --- [main] c.Application                            : The following profiles are active: dev
+2024-05-15 21:41:49.581  INFO 20268 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9090 (http)
+2024-05-15 21:41:49.586  INFO 20268 --- [main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9090"]
+2024-05-15 21:41:49.586  INFO 20268 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2024-05-15 21:41:49.586  INFO 20268 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2024-05-15 21:41:49.633  INFO 20268 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2024-05-15 21:41:49.634  INFO 20268 --- [main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1845 ms
+2024-05-15 21:41:49.832  INFO 20268 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2024-05-15 21:41:49.927  INFO 20268 --- [main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9090"]
+2024-05-15 21:41:49.939  INFO 20268 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9090 (http) with context path ''
+2024-05-15 21:41:49.940  INFO 20268 --- [main] c.Application                            : Started Application in 2.384 seconds (JVM running for 2.996)
+2024-05-15 21:42:21.373  INFO 20268 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2024-05-15 21:42:25.533  INFO 21016 --- [main] c.Application                            : Starting Application on computer with PID 21016 (D:\blog-master\blog-java\target\classes started by Administrator in D:\blog-master\blog-java)
+2024-05-15 21:42:25.537  INFO 21016 --- [main] c.Application                            : The following profiles are active: dev
+2024-05-15 21:42:27.322  INFO 21016 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9090 (http)
+2024-05-15 21:42:27.326  INFO 21016 --- [main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9090"]
+2024-05-15 21:42:27.326  INFO 21016 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2024-05-15 21:42:27.326  INFO 21016 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2024-05-15 21:42:27.371  INFO 21016 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2024-05-15 21:42:27.372  INFO 21016 --- [main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1817 ms
+2024-05-15 21:42:27.562  INFO 21016 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2024-05-15 21:42:27.658  INFO 21016 --- [main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9090"]
+2024-05-15 21:42:27.669  INFO 21016 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9090 (http) with context path ''
+2024-05-15 21:42:27.670  INFO 21016 --- [main] c.Application                            : Started Application in 2.339 seconds (JVM running for 2.886)
+2024-05-15 21:50:00.798  INFO 21016 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2024-05-15 21:50:02.729  INFO 15880 --- [main] c.Application                            : Starting Application on computer with PID 15880 (D:\blog-master\blog-java\target\classes started by Administrator in D:\blog-master\blog-java)
+2024-05-15 21:50:02.733  INFO 15880 --- [main] c.Application                            : The following profiles are active: dev
+2024-05-15 21:50:04.591  INFO 15880 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9091 (http)
+2024-05-15 21:50:04.595  INFO 15880 --- [main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9091"]
+2024-05-15 21:50:04.596  INFO 15880 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2024-05-15 21:50:04.596  INFO 15880 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2024-05-15 21:50:04.642  INFO 15880 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2024-05-15 21:50:04.642  INFO 15880 --- [main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1891 ms
+2024-05-15 21:50:04.836  INFO 15880 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2024-05-15 21:50:04.928  INFO 15880 --- [main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9091"]
+2024-05-15 21:50:04.938  INFO 15880 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9091 (http) with context path ''
+2024-05-15 21:50:04.940  INFO 15880 --- [main] c.Application                            : Started Application in 2.429 seconds (JVM running for 3.001)
+2024-05-15 21:50:11.500  INFO 15880 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2024-05-15 21:50:13.424  INFO 14392 --- [main] c.Application                            : Starting Application on computer with PID 14392 (D:\blog-master\blog-java\target\classes started by Administrator in D:\blog-master\blog-java)
+2024-05-15 21:50:13.428  INFO 14392 --- [main] c.Application                            : The following profiles are active: dev
+2024-05-15 21:50:15.223  INFO 14392 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9090 (http)
+2024-05-15 21:50:15.228  INFO 14392 --- [main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9090"]
+2024-05-15 21:50:15.228  INFO 14392 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2024-05-15 21:50:15.228  INFO 14392 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2024-05-15 21:50:15.274  INFO 14392 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2024-05-15 21:50:15.274  INFO 14392 --- [main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1829 ms
+2024-05-15 21:50:15.432  INFO 14392 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2024-05-15 21:50:15.565  INFO 14392 --- [main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9090"]
+2024-05-15 21:50:15.576  INFO 14392 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9090 (http) with context path ''
+2024-05-15 21:50:15.577  INFO 14392 --- [main] c.Application                            : Started Application in 2.361 seconds (JVM running for 2.931)
+2024-05-15 21:51:48.542  INFO 14392 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2024-05-15 21:51:50.441  INFO 20056 --- [main] c.Application                            : Starting Application on computer with PID 20056 (D:\blog-master\blog-java\target\classes started by Administrator in D:\blog-master\blog-java)
+2024-05-15 21:51:50.445  INFO 20056 --- [main] c.Application                            : The following profiles are active: dev
+2024-05-15 21:51:52.258  INFO 20056 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9090 (http)
+2024-05-15 21:51:52.263  INFO 20056 --- [main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9090"]
+2024-05-15 21:51:52.263  INFO 20056 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2024-05-15 21:51:52.264  INFO 20056 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2024-05-15 21:51:52.313  INFO 20056 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2024-05-15 21:51:52.313  INFO 20056 --- [main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1849 ms
+2024-05-15 21:51:52.513  INFO 20056 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2024-05-15 21:51:52.608  INFO 20056 --- [main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9090"]
+2024-05-15 21:51:52.618  INFO 20056 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9090 (http) with context path ''
+2024-05-15 21:51:52.620  INFO 20056 --- [main] c.Application                            : Started Application in 2.38 seconds (JVM running for 2.944)
+2024-05-15 21:53:03.224  INFO 20056 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2024-05-15 21:53:05.120  INFO 6784 --- [main] c.Application                            : Starting Application on computer with PID 6784 (D:\blog-master\blog-java\target\classes started by Administrator in D:\blog-master\blog-java)
+2024-05-15 21:53:05.124  INFO 6784 --- [main] c.Application                            : The following profiles are active: dev
+2024-05-15 21:53:06.922  INFO 6784 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9090 (http)
+2024-05-15 21:53:06.926  INFO 6784 --- [main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9090"]
+2024-05-15 21:53:06.927  INFO 6784 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2024-05-15 21:53:06.927  INFO 6784 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2024-05-15 21:53:06.975  INFO 6784 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2024-05-15 21:53:06.975  INFO 6784 --- [main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1833 ms
+2024-05-15 21:53:07.184  INFO 6784 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2024-05-15 21:53:07.280  INFO 6784 --- [main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9090"]
+2024-05-15 21:53:07.292  INFO 6784 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9090 (http) with context path ''
+2024-05-15 21:53:07.293  INFO 6784 --- [main] c.Application                            : Started Application in 2.371 seconds (JVM running for 2.934)
+2024-05-15 21:53:53.825  INFO 6784 --- [http-nio-9090-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-15 21:53:53.825  INFO 6784 --- [http-nio-9090-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2024-05-15 21:53:53.828  INFO 6784 --- [http-nio-9090-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 3 ms
+2024-05-15 21:59:31.751  WARN 6784 --- [http-nio-9090-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2024-05-15 21:59:53.023  INFO 6784 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2024-05-15 21:59:56.385  INFO 764 --- [main] c.Application                            : Starting Application on computer with PID 764 (D:\blog-master\blog-java\target\classes started by Administrator in D:\blog-master\blog-java)
+2024-05-15 21:59:56.389  INFO 764 --- [main] c.Application                            : The following profiles are active: dev
+2024-05-15 21:59:58.131  INFO 764 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9090 (http)
+2024-05-15 21:59:58.135  INFO 764 --- [main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9090"]
+2024-05-15 21:59:58.135  INFO 764 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2024-05-15 21:59:58.136  INFO 764 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2024-05-15 21:59:58.179  INFO 764 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2024-05-15 21:59:58.180  INFO 764 --- [main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1774 ms
+2024-05-15 21:59:58.385  INFO 764 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2024-05-15 21:59:58.478  INFO 764 --- [main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9090"]
+2024-05-15 21:59:58.490  INFO 764 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9090 (http) with context path ''
+2024-05-15 21:59:58.491  INFO 764 --- [main] c.Application                            : Started Application in 2.312 seconds (JVM running for 2.861)
+2024-05-15 22:00:00.941  INFO 764 --- [http-nio-9090-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-15 22:00:00.942  INFO 764 --- [http-nio-9090-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2024-05-15 22:00:00.944  INFO 764 --- [http-nio-9090-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 2 ms
+2024-05-15 22:02:21.284  INFO 764 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2024-05-15 22:02:23.224  INFO 4640 --- [main] c.Application                            : Starting Application on computer with PID 4640 (D:\blog-master\blog-java\target\classes started by Administrator in D:\blog-master\blog-java)
+2024-05-15 22:02:23.228  INFO 4640 --- [main] c.Application                            : The following profiles are active: dev
+2024-05-15 22:02:25.051  INFO 4640 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9090 (http)
+2024-05-15 22:02:25.056  INFO 4640 --- [main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9090"]
+2024-05-15 22:02:25.056  INFO 4640 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2024-05-15 22:02:25.056  INFO 4640 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2024-05-15 22:02:25.102  INFO 4640 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2024-05-15 22:02:25.103  INFO 4640 --- [main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1858 ms
+2024-05-15 22:02:25.261  INFO 4640 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2024-05-15 22:02:25.387  INFO 4640 --- [main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9090"]
+2024-05-15 22:02:25.398  INFO 4640 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9090 (http) with context path ''
+2024-05-15 22:02:25.399  INFO 4640 --- [main] c.Application                            : Started Application in 2.38 seconds (JVM running for 2.95)
+2024-05-15 22:02:39.806  INFO 4640 --- [http-nio-9090-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-15 22:02:39.806  INFO 4640 --- [http-nio-9090-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2024-05-15 22:02:39.809  INFO 4640 --- [http-nio-9090-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 3 ms
+2024-05-15 22:56:20.843  INFO 4640 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2024-05-15 22:56:22.792  INFO 13152 --- [main] c.Application                            : Starting Application on computer with PID 13152 (D:\blog-master\blog-java\target\classes started by Administrator in D:\blog-master\blog-java)
+2024-05-15 22:56:22.796  INFO 13152 --- [main] c.Application                            : The following profiles are active: dev
+2024-05-15 22:56:24.588  INFO 13152 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9090 (http)
+2024-05-15 22:56:24.593  INFO 13152 --- [main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9090"]
+2024-05-15 22:56:24.593  INFO 13152 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2024-05-15 22:56:24.593  INFO 13152 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2024-05-15 22:56:24.640  INFO 13152 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2024-05-15 22:56:24.640  INFO 13152 --- [main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1826 ms
+2024-05-15 22:56:24.836  INFO 13152 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2024-05-15 22:56:24.933  INFO 13152 --- [main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9090"]
+2024-05-15 22:56:24.944  INFO 13152 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9090 (http) with context path ''
+2024-05-15 22:56:24.945  INFO 13152 --- [main] c.Application                            : Started Application in 2.36 seconds (JVM running for 2.922)
+2024-05-15 22:56:35.678  INFO 13152 --- [http-nio-9090-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-15 22:56:35.678  INFO 13152 --- [http-nio-9090-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2024-05-15 22:56:35.681  INFO 13152 --- [http-nio-9090-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 3 ms
+2024-05-15 22:57:11.894  INFO 13152 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2024-05-15 22:57:13.848  INFO 20988 --- [main] c.Application                            : Starting Application on computer with PID 20988 (D:\blog-master\blog-java\target\classes started by Administrator in D:\blog-master\blog-java)
+2024-05-15 22:57:13.852  INFO 20988 --- [main] c.Application                            : The following profiles are active: dev
+2024-05-15 22:57:15.610  INFO 20988 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9090 (http)
+2024-05-15 22:57:15.614  INFO 20988 --- [main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9090"]
+2024-05-15 22:57:15.615  INFO 20988 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2024-05-15 22:57:15.615  INFO 20988 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2024-05-15 22:57:15.660  INFO 20988 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2024-05-15 22:57:15.660  INFO 20988 --- [main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1790 ms
+2024-05-15 22:57:15.858  INFO 20988 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2024-05-15 22:57:15.950  INFO 20988 --- [main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9090"]
+2024-05-15 22:57:15.960  INFO 20988 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9090 (http) with context path ''
+2024-05-15 22:57:15.961  INFO 20988 --- [main] c.Application                            : Started Application in 2.328 seconds (JVM running for 2.907)
+2024-05-15 22:57:22.274  INFO 20988 --- [http-nio-9090-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-15 22:57:22.275  INFO 20988 --- [http-nio-9090-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2024-05-15 22:57:22.277  INFO 20988 --- [http-nio-9090-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 2 ms
+2024-05-15 22:59:26.004  INFO 20988 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2024-05-15 23:12:55.465  INFO 12036 --- [main] c.Application                            : Starting Application on computer with PID 12036 (D:\blog-master\blog-java\target\classes started by Administrator in D:\blog-master\blog-java)
+2024-05-15 23:12:55.469  INFO 12036 --- [main] c.Application                            : The following profiles are active: dev
+2024-05-15 23:12:57.793  INFO 12036 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9090 (http)
+2024-05-15 23:12:57.798  INFO 12036 --- [main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9090"]
+2024-05-15 23:12:57.798  INFO 12036 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2024-05-15 23:12:57.798  INFO 12036 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2024-05-15 23:12:57.849  INFO 12036 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2024-05-15 23:12:57.849  INFO 12036 --- [main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 2363 ms
+2024-05-15 23:12:58.075  INFO 12036 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2024-05-15 23:12:58.175  INFO 12036 --- [main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9090"]
+2024-05-15 23:12:58.190  INFO 12036 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9090 (http) with context path ''
+2024-05-15 23:12:58.191  INFO 12036 --- [main] c.Application                            : Started Application in 2.942 seconds (JVM running for 3.516)
+2024-05-15 23:13:14.004  INFO 12036 --- [http-nio-9090-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-15 23:13:14.004  INFO 12036 --- [http-nio-9090-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2024-05-15 23:13:14.007  INFO 12036 --- [http-nio-9090-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 3 ms
+2024-05-15 23:16:38.673  INFO 12036 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2024-05-15 23:16:40.652  INFO 6060 --- [main] c.Application                            : Starting Application on computer with PID 6060 (D:\blog-master\blog-java\target\classes started by Administrator in D:\blog-master\blog-java)
+2024-05-15 23:16:40.656  INFO 6060 --- [main] c.Application                            : The following profiles are active: dev
+2024-05-15 23:16:42.479  INFO 6060 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9090 (http)
+2024-05-15 23:16:42.484  INFO 6060 --- [main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9090"]
+2024-05-15 23:16:42.484  INFO 6060 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2024-05-15 23:16:42.485  INFO 6060 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2024-05-15 23:16:42.536  INFO 6060 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2024-05-15 23:16:42.536  INFO 6060 --- [main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1862 ms
+2024-05-15 23:16:42.752  INFO 6060 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2024-05-15 23:16:42.853  INFO 6060 --- [main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9090"]
+2024-05-15 23:16:42.864  INFO 6060 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9090 (http) with context path ''
+2024-05-15 23:16:42.865  INFO 6060 --- [main] c.Application                            : Started Application in 2.419 seconds (JVM running for 3.006)
+2024-05-15 23:16:48.599  INFO 6060 --- [http-nio-9090-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-15 23:16:48.599  INFO 6060 --- [http-nio-9090-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2024-05-15 23:16:48.602  INFO 6060 --- [http-nio-9090-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 3 ms
+2024-05-16 19:34:29.924  INFO 9360 --- [main] c.Application                            : Starting Application on computer with PID 9360 (D:\blog-master\blog-java\target\classes started by Administrator in D:\blog-master\blog-java)
+2024-05-16 19:34:29.928  INFO 9360 --- [main] c.Application                            : The following profiles are active: dev
+2024-05-16 19:34:31.807  INFO 9360 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9090 (http)
+2024-05-16 19:34:31.812  INFO 9360 --- [main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9090"]
+2024-05-16 19:34:31.813  INFO 9360 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2024-05-16 19:34:31.813  INFO 9360 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2024-05-16 19:34:31.860  INFO 9360 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2024-05-16 19:34:31.860  INFO 9360 --- [main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1915 ms
+2024-05-16 19:34:32.066  INFO 9360 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2024-05-16 19:34:32.166  INFO 9360 --- [main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9090"]
+2024-05-16 19:34:32.178  INFO 9360 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9090 (http) with context path ''
+2024-05-16 19:34:32.179  INFO 9360 --- [main] c.Application                            : Started Application in 2.458 seconds (JVM running for 3.035)
+2024-05-16 19:35:03.406  INFO 9360 --- [http-nio-9090-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-16 19:35:03.406  INFO 9360 --- [http-nio-9090-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2024-05-16 19:35:03.409  INFO 9360 --- [http-nio-9090-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 2 ms
+2024-05-16 19:35:41.665  INFO 9360 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2024-05-16 19:35:45.159  INFO 19696 --- [main] c.Application                            : Starting Application on computer with PID 19696 (D:\blog-master\blog-java\target\classes started by Administrator in D:\blog-master\blog-java)
+2024-05-16 19:35:45.163  INFO 19696 --- [main] c.Application                            : The following profiles are active: dev
+2024-05-16 19:35:46.955  INFO 19696 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9090 (http)
+2024-05-16 19:35:46.959  INFO 19696 --- [main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9090"]
+2024-05-16 19:35:46.959  INFO 19696 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2024-05-16 19:35:46.959  INFO 19696 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2024-05-16 19:35:47.004  INFO 19696 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2024-05-16 19:35:47.004  INFO 19696 --- [main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1823 ms
+2024-05-16 19:35:47.201  INFO 19696 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2024-05-16 19:35:47.302  INFO 19696 --- [main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9090"]
+2024-05-16 19:35:47.312  INFO 19696 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9090 (http) with context path ''
+2024-05-16 19:35:47.314  INFO 19696 --- [main] c.Application                            : Started Application in 2.356 seconds (JVM running for 2.926)
+2024-05-16 19:35:59.719  INFO 19696 --- [http-nio-9090-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-16 19:35:59.719  INFO 19696 --- [http-nio-9090-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2024-05-16 19:35:59.722  INFO 19696 --- [http-nio-9090-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 3 ms
+2024-05-16 19:35:59.738  INFO 19696 --- [http-nio-9090-exec-1] c.s.c.LoginController                    : login
+2024-05-16 22:00:39.629  INFO 19696 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2024-05-16 22:00:58.608  INFO 20952 --- [main] c.Application                            : Starting Application on computer with PID 20952 (D:\blog-master\blog-java\target\classes started by Administrator in D:\blog-master\blog-java)
+2024-05-16 22:00:58.611  INFO 20952 --- [main] c.Application                            : The following profiles are active: dev
+2024-05-16 22:01:00.352  INFO 20952 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9090 (http)
+2024-05-16 22:01:00.356  INFO 20952 --- [main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9090"]
+2024-05-16 22:01:00.357  INFO 20952 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2024-05-16 22:01:00.357  INFO 20952 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2024-05-16 22:01:00.401  INFO 20952 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2024-05-16 22:01:00.402  INFO 20952 --- [main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1774 ms
+2024-05-16 22:01:00.620  INFO 20952 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2024-05-16 22:01:00.715  INFO 20952 --- [main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9090"]
+2024-05-16 22:01:00.726  INFO 20952 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9090 (http) with context path ''
+2024-05-16 22:01:00.727  INFO 20952 --- [main] c.Application                            : Started Application in 2.316 seconds (JVM running for 2.86)
+2024-05-16 22:01:54.411  INFO 20952 --- [http-nio-9090-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-16 22:01:54.411  INFO 20952 --- [http-nio-9090-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2024-05-16 22:01:54.414  INFO 20952 --- [http-nio-9090-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 3 ms
+2024-05-16 22:01:54.481  INFO 20952 --- [http-nio-9090-exec-1] c.z.h.HikariDataSource                   : DatebookHikariCP - Starting...
+2024-05-16 22:01:54.552  INFO 20952 --- [http-nio-9090-exec-1] c.z.h.HikariDataSource                   : DatebookHikariCP - Start completed.
+2024-05-16 22:46:24.789  INFO 20952 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2024-05-16 22:46:24.793  INFO 20952 --- [SpringContextShutdownHook] c.z.h.HikariDataSource                   : DatebookHikariCP - Shutdown initiated...
+2024-05-16 22:46:24.795  INFO 20952 --- [SpringContextShutdownHook] c.z.h.HikariDataSource                   : DatebookHikariCP - Shutdown completed.
+2024-05-16 22:46:28.360  INFO 8916 --- [main] c.Application                            : Starting Application on computer with PID 8916 (D:\blog-master\blog-java\target\classes started by Administrator in D:\blog-master\blog-java)
+2024-05-16 22:46:28.364  INFO 8916 --- [main] c.Application                            : The following profiles are active: dev
+2024-05-16 22:46:30.126  INFO 8916 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9090 (http)
+2024-05-16 22:46:30.130  INFO 8916 --- [main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9090"]
+2024-05-16 22:46:30.131  INFO 8916 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2024-05-16 22:46:30.131  INFO 8916 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2024-05-16 22:46:30.175  INFO 8916 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2024-05-16 22:46:30.175  INFO 8916 --- [main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1794 ms
+2024-05-16 22:46:30.381  INFO 8916 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2024-05-16 22:46:30.473  INFO 8916 --- [main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9090"]
+2024-05-16 22:46:30.483  INFO 8916 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9090 (http) with context path ''
+2024-05-16 22:46:30.485  INFO 8916 --- [main] c.Application                            : Started Application in 2.328 seconds (JVM running for 2.869)
+2024-05-16 23:13:23.854  INFO 8916 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
