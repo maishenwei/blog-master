@@ -13,6 +13,21 @@ CREATE TABLE `authority_department` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
+DROP TABLE IF EXISTS `blog_user`;
+
+CREATE TABLE `blog_user` (
+    `id` tinyint unsigned NOT NULL,
+    `username` varchar(20) NOT NULL,
+    `password` varchar(10) NOT NULL,
+    `name` varchar(10) NOT NULL,
+    `gender` tinyint unsigned NOT NULL DEFAULT '1',
+    `level` tinyint unsigned NOT NULL DEFAULT '1',
+    `image` varchar(500) DEFAULT NULL,
+    `createtime` datetime DEFAULT (now()),
+    `updatetime` datetime DEFAULT (now()),
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+
 -- ----------------------------
 -- Table structure for `blog_friend`
 -- ----------------------------
