@@ -48,6 +48,19 @@ const allBlog = [
         "content":"<p><strong>一、项目介绍</strong></p><p><span style=\"color: rgb(64, 72, 91);\">爱吃火锅点餐小程序由小程序端和管理端构成。</span></p><p><span style=\"color: rgb(64, 72, 91);\">小程序端是用微信小程序原生语言开发。</span></p><p><span style=\"color: rgb(64, 72, 91);\">管理端前端是用Vue+Elementui开发，管理端后端是用SpirngBoot+MyBatis开发。</span></p><p><span style=\"color: rgb(64, 72, 91);\">数据库用的是mysql。</span></p><p><span style=\"color: rgb(64, 72, 91);\">总体来说涉及的技术比较广，难度适中，都是市面上主流的技术，非常适合作为毕业设计。</span></p><p><strong>二、项目演示地址</strong></p><p>B站视频介绍：<a href=\"https://www.bilibili.com/video/BV1zN411P7HN/?spm_id_from=333.999.0.0\" rel=\"noopener noreferrer\" target=\"_blank\">https://www.bilibili.com/video/BV1zN411P7HN/?spm_id_from=333.999.0.0</a></p><p><br></p><p><strong>三、功能介绍</strong></p><p><img src=\"../../../static/images/huoguogn.jpg\" style=\"width:600px;height:500px;\" /></p><p><strong>四、技术栈</strong></p><p>微信端：微信开发者工具、微信小程序原生开发语言</p><p>前端：Vscode、Vue2.0、ElementUI、Nodev</p><p>后端：idea、JDK1.8、SpringBoot、MyBatis、JWT</p><p>数据库：MySQL5.7、Navicat</p><p><br></p>"
     }
 ]
+
+const levelName = [
+    "青铜",
+    "白银",
+    "黄金",
+    "铂金",
+    "钻石",
+    "大师",
+    "王者",
+]
+
+
 export default {
-    allBlog
+    allBlog,
+    levelName
 };

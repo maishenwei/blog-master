@@ -43,5 +43,12 @@ export default new Router({
       name: 'register',
       component: resolve => require(['@/components/register.vue'],resolve)
     },
-  ]
+  ],
 })
+
+const originalPush = Router.prototype.push
+
+Router.prototype.push = function push(location) {
+  return originalPush.call(this, location).catch(err => err)
+}
+

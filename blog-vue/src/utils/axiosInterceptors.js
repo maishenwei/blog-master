@@ -1,6 +1,7 @@
 import axios from 'axios'
 import router from '../router'
 
+import { getToken } from '@/utils/token'
 import {Message} from "element-ui";
 import { Loading } from "element-ui";
 
@@ -9,12 +10,17 @@ let loading = null;
 //请求拦截器
 axios.interceptors.request.use(
   function (config) {
-    var user = localStorage.getItem("user");
-    if (user != null && user != ""){
-      var userObj = JSON.parse(user);
-      var token = userObj.token;
-      config.headers['Authorization'] = token;
+    // var user = localStorage.getItem("user");  
+    // if (user != null && user != ""){
+    //   var userObj = JSON.parse(user);
+    //   var token = userObj.token;
+    //   config.headers['Authorization'] = token;
+    // }
+    
+    if(getToken()){
+      config.headers['Authorization'] = getToken();
     }
+
     //请求之前
     loading = Loading.service({
       lock: true,
@@ -40,8 +46,12 @@ axios.interceptors.response.use(
       router.replace({
         path: '/'
       });
-    }else if (response.data.code != "200"){
-      Message.error({message:response.data.msg});
+    }else if (response.status == "200"){
+      if(response.data.code == 1){
+        Message.success({message:response.data.msg});
+      }else{
+        Message.error({message:response.data.msg});
+      }
     }
     //响应数据
     return response;

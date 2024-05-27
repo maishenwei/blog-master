@@ -16,7 +16,7 @@
           </el-input>
         </el-form-item>
         <el-form-item>
-          <el-input size="small" v-model="password" placeholder="请确认密码" show-password>
+          <el-input size="small" v-model="confirm_password" placeholder="请确认密码" show-password>
           </el-input>
         </el-form-item>
         <el-form-item>
@@ -35,15 +35,38 @@ export default {
   data() {
     return {
       username: "",
-      password: ""
+      password: "",
+      confirm_password:""
     }
   },
   methods: {
     register() {
       console.log("点击注册")
-      this.$router.push({
-                path: '/register'
-            });
+     
+      if(this.confirm_password != this.password){
+        Message.error("输入密码不一致，请确认密码！")
+        return
+      }
+      const self = this;
+      axios.post("/register",{
+        username:this.username,
+        password:this.password
+      }).then(function(respon){
+        console.log(respon)
+        
+        if(respon.data.code == 1){
+          console.log("注册成功 "+ self.username);
+          self.$router.push({ 
+            name: 'login' ,
+            params: {  
+              username:self.username,
+              password:self.password 
+            }
+          });
+        }else{
+          console.log("注册失败")
+        }
+      });
     }
   },
   created() {

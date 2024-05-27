@@ -16,7 +16,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User getById(Integer id) {
-        return null;
+        return mapper.getById(id);
     }
 
     @Override
@@ -30,12 +30,17 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void save(User user) {
-
+    public void insert(User user) {
+        mapper.insert(user);
     }
 
     @Override
     public User login(User user) {
         return mapper.getByUsernameAndPassword(user);
+    }
+
+    @Override
+    public User contains(User user) {
+        return mapper.containsUserByUsername(user);
     }
 }

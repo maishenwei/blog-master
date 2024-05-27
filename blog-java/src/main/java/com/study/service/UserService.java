@@ -11,7 +11,9 @@ public interface UserService {
     void delete(List<Integer> ids);
     void update(User user);
 
-    void save(User user);
+    void insert(User user);
 
     User login(User user);
+
+    User contains(User user);
 }

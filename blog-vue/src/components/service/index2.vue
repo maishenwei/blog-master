@@ -30,14 +30,14 @@
                         </div>
                         <div
                             style="line-height:26px;font-size:13px;margin-left:20px;float:left;width: 230px;height: 100px;margin-top: 10px;">
-                            <div style="width: 100%;">昵称：Java十点半</div>
-                            <div style="width: 100%;">职业：全栈工程师</div>
-                            <div style="width: 100%;">微信：tttxas123</div>
-                            <div style="width: 100%;">Q Q：3550469342</div>
+                            <div style="width: 100%;">昵称：{{ user.name }}</div>
+                            <div style="width: 100%;">等级：{{ user.level }}</div>
+
                         </div>
                     </div>
                     <div style="line-height:30px;margin-top:10px;float: left;margin-left: 30px;margin-right: 30px;">
-                        <i style="color:black!important;">一声霹雳一把剑，一群猛虎钢七连；钢铁的意志钢铁汉，铁血卫国保家园；杀声吓破敌人胆，百战百胜美名传；攻必克，守必坚，踏敌尸骨唱凯旋！</i>
+                        <i
+                            style="color:black!important;">一声霹雳一把剑，一群猛虎钢七连；钢铁的意志钢铁汉，铁血卫国保家园；杀声吓破敌人胆，百战百胜美名传；攻必克，守必坚，踏敌尸骨唱凯旋！</i>
                     </div>
                 </div>
                 <div style="margin-top:15px;background: white;">
@@ -88,13 +88,17 @@
                 </div>
             </div>
         </div>
-        <div style="text-align:center;float:left;width: 100%;margin: auto;height:50px;line-height:50px;background: white;">
+        <div
+            style="text-align:center;float:left;width: 100%;margin: auto;height:50px;line-height:50px;background: white;">
             Copyright © Java十点半
         </div>
     </div>
 </template>
 <script>
+import axios from 'axios';
 import global from '../data/data.js';
+import {setlocalStorage,getlocalStorage} from "../../utils/localStorageUtil.js";
+
 export default {
     data() {
         return {
@@ -107,7 +111,11 @@ export default {
             ],
             paihang: [],
             keyword: "",
-            imgViewUrl: ""
+            imgViewUrl: "",
+            user: {
+                name: "用户",
+                level: 1
+            }
         };
     },
     methods: {
@@ -139,6 +147,7 @@ export default {
                 path: '/messageBoard'
             });
         },
+       
         getHeight() {
             this.defaultHeight.height = window.innerHeight - 1 + "px";
         },
@@ -182,7 +191,20 @@ export default {
                 }
             });
             window.open(routeData.href, "_blank");
+        },
+
+        fetchData() {
+            const self = this
+            let id = getlocalStorage("uid");
+            axios.get("/home/" + id).then(function (respon) {
+                console.log("首页请求信息：" + respon)
+                console.log(respon)
+                self.user = respon.data.data.user
+            })
         }
+    },
+    created() {
+        this.fetchData();
     },
     mounted() {
         this.getZjgx();

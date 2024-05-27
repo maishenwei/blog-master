@@ -9,26 +9,24 @@ import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 import axios from './utils/axiosInterceptors.js';
 import * as echarts from 'echarts';
+import { getToken } from '@/utils/token'
 
-import VueQuillEditor from 'vue-quill-editor';
-import 'quill/dist/quill.core.css';
-import 'quill/dist/quill.snow.css';
-import 'quill/dist/quill.bubble.css';
-import * as Quill from 'quill'  // 引入编辑器
-import ImageResize from 'quill-image-resize-module';
-Quill.register('modules/imageResize',ImageResize);
-Vue.use(VueQuillEditor);
 Vue.prototype.$echarts = echarts
 Vue.config.productionTip = false
 // 配置 Vue 插件
 Vue.use(ElementUI);
-
 
 //axios.defaults.baseURL = "https://xuezhabiji.com/api";
 axios.defaults.baseURL = "http://localhost:9090";
 Vue.prototype.$http = axios;
 //关闭弹框点击遮罩之外的地方关闭弹框
 ElementUI.Dialog.props.closeOnClickModal.default = false;
+
+// 全局挂载路由导航守卫： 验证用户是否登录
+router.beforeEach((to, from, next) => {
+  if (to.name !== 'login' && !getToken())  next('/login')   // 如果用户不是访问登录页而且没有登录，则强制跳转到登录页
+  else next()
+})
 
 /* eslint-disable no-new */
 new Vue({

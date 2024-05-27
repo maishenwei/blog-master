@@ -29,33 +29,48 @@
 <script>
 import axios from "axios";
 import { Message } from "element-ui";
+import global from '../components/data/data.js';
+import {getToken,setToken} from "../utils/token.js";
+import {getlocalStorage,setlocalStorage} from "../utils/localStorageUtil.js";
 export default {
   name: 'login',
   data() {
     return {
-      username: "",
-      password: ""
+      username: this.$route.params.username,
+      password: this.$route.params.password
     }
   },
   methods: {
     login() {
       console.log("点击登录")
+      const self = this;
       axios.post("/login",{
         username:this.username,
         password:this.password
       }).then(function(respon){
         console.log(respon)
-        if(respon.data.code == 1){
-        }else{
+        if(respon.data.code == 0){
+          console.log("登录失败");
+          return;
         }
+
+        setToken(respon.data.data.token)
+        setlocalStorage("uid",respon.data.data.id)
+        self.$router.push({ 
+          name: 'index2' ,
+          params: {  
+              id:respon.data.data.id
+            }
+        });
       });
     },
+
     register() {
       console.log("点击注册")
       this.$router.push({
         path: '/register'
       });
-}
+    },
   },
   created() {
   },
