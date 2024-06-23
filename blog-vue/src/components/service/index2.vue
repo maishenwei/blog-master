@@ -7,6 +7,7 @@
                 <div class="top" style="float:left;margin-left:30px;cursor: pointer;" @click="index()">首页</div>
                 <div class="top" style="float:left;margin-left:30px;cursor: pointer;" @click="guidang()">归档</div>
                 <div class="top" style="float:left;margin-left:30px;cursor: pointer;" @click="message()">留言板</div>
+                <div class="top" style="float:left;margin-left:30px;cursor: pointer;" @click="editor()">写文章</div>
                 <div style="float:right;margin-right:30px;">
                     <el-input placeholder="搜索博客" v-model="keyword">
                         <el-button slot="append" icon="el-icon-search" @click="search()"></el-button>
@@ -37,7 +38,7 @@
                     </div>
                     <div style="line-height:30px;margin-top:10px;float: left;margin-left: 30px;margin-right: 30px;">
                         <i
-                            style="color:black!important;">一声霹雳一把剑，一群猛虎钢七连；钢铁的意志钢铁汉，铁血卫国保家园；杀声吓破敌人胆，百战百胜美名传；攻必克，守必坚，踏敌尸骨唱凯旋！</i>
+                            style="color:black!important;">来都来了</i>
                     </div>
                 </div>
                 <div style="margin-top:15px;background: white;">
@@ -66,7 +67,7 @@
                     </div>
                     <div style="width:100%;height:20px;"></div>
                 </div>
-                <div style="margin-top:15px;background: white;">
+                <!-- <div style="margin-top:15px;background: white;">
                     <div
                         style="margin-left:30px;margin-right:30px;line-height:40px;height:40px;border-bottom:1px dashed #e0e0e0;">
                         友情链接</div>
@@ -85,7 +86,7 @@
                     <div><img style="margin-left:18px;height:200px;width:200px;"
                             src="../../../static/images/gongzhonghao.jpg" /></div>
                     <div style="width:100%;height:20px;"></div>
-                </div>
+                </div> -->
             </div>
         </div>
         <div
@@ -115,7 +116,8 @@ export default {
             user: {
                 name: "用户",
                 level: 1
-            }
+            },
+            allBlog:[],
         };
     },
     methods: {
@@ -147,14 +149,19 @@ export default {
                 path: '/messageBoard'
             });
         },
+        editor() {
+            this.$router.push({
+                path: '/editor'
+            });
+        },
        
         getHeight() {
             this.defaultHeight.height = window.innerHeight - 1 + "px";
         },
         getZjgx() {
             var temp = [];
-            for (var i = 0; i < global.allBlog.length; i++) {
-                var tempData = global.allBlog[i];
+            for (var i = 0; i < this.allBlog.length; i++) {
+                var tempData = this.allBlog[i];
                 if (tempData.title.length > 20) {
                     tempData.title = tempData.title.substring(0, 20) + "...";
                 }
@@ -166,7 +173,7 @@ export default {
             this.zjgx = temp;
         },
         getPaiHang() {
-            var temGlobal = global.allBlog;
+            var temGlobal = this.allBlog;
             var temp = [];
             for (var i = 0; i < temGlobal.length; i++) {
                 var tempData = temGlobal[i];
@@ -197,18 +204,15 @@ export default {
             const self = this
             let id = getlocalStorage("uid");
             axios.get("/home/" + id).then(function (respon) {
-                console.log("首页请求信息：" + respon)
-                console.log(respon)
                 self.user = respon.data.data.user
+                self.allBlog = respon.data.data.posts
+                self.getZjgx();
+                self.getPaiHang();
             })
         }
     },
-    created() {
-        this.fetchData();
-    },
     mounted() {
-        this.getZjgx();
-        this.getPaiHang();
+        this.fetchData();
     },
     beforeCreate() {
         document.querySelector('html').setAttribute('style', 'background: #E9EAED;');

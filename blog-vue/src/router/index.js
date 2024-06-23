@@ -30,7 +30,11 @@ export default new Router({
           path: '/search',
           name: 'search',
           component: resolve => require(['@/components/service/search.vue'],resolve)
-        },
+        }, {
+          path: '/editor',
+          name: 'editor',
+          component: resolve => require(['@/components/service/editor.vue'],resolve)
+        }
       ]
     },
     {

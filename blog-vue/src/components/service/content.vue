@@ -60,6 +60,7 @@
 <script>
 import { Message } from "element-ui";
 import global from '../data/data.js';
+import axios from "axios";
 export default {
     data() {
         return {
@@ -84,19 +85,19 @@ export default {
     methods: {
         getBlogById() {
             var blog = {};
-            for (var i = 0; i < global.allBlog.length; i++) {
-                if (this.id == global.allBlog[i].id) {
-                    blog = global.allBlog[i];
-                    break;
-                }
-            }
-            this.content = blog.content;
-            this.title = blog.title;
-            this.lastBlog = blog.lastBlog;
-            this.nextBlog = blog.nextBlog;
-            this.lastBlogName = blog.lastBlogName;
-            this.nextBlogName = blog.nextBlogName;
-            this.zan = blog.zan;
+           
+            const self = this
+            axios.get("/post/"+this.id).then(function(respon){
+                blog = respon.data.data
+                self.content = blog.content;
+                self.title = blog.title;
+                self.lastBlog = blog.lastBlog;
+                self.nextBlog = blog.nextBlog;
+                self.lastBlogName = blog.lastBlogName;
+                self.nextBlogName = blog.nextBlogName;
+                self.like = blog.like;
+            })
+           
             document.documentElement.scrollTop = 0;
         },
         nextBlogMethod() {

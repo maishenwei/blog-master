@@ -48,7 +48,7 @@ axios.interceptors.response.use(
       });
     }else if (response.status == "200"){
       if(response.data.code == 1){
-        Message.success({message:response.data.msg});
+        // Message.success({message:response.data.msg});
       }else{
         Message.error({message:response.data.msg});
       }

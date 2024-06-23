@@ -15,6 +15,7 @@
 </template>
 <script>
 import global from '../data/data.js';
+import axios from "axios";
 export default {
     data() {
         return {
@@ -23,7 +24,11 @@ export default {
     },
     methods: {
         getData() {
-            this.blogList = global.allBlog;
+            const self = this;
+            axios.get("/post/list").then(function(respon){
+                self.blogList = respon.data.data
+                console.log(self.blogList)
+            })
         },
         content(id) {
             const routeData = this.$router.resolve({

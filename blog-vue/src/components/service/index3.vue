@@ -55,6 +55,7 @@
     </div>
 </template>
 <script>
+import axios from 'axios';
 import global from '../data/data.js';
 export default {
     data() {
@@ -65,26 +66,28 @@ export default {
             tableData: [],
             lastShow: true,
             nextShow: true,
-            lunbo: []
+            lunbo: [],
+            allBlog:[],
         };
     },
     methods: {
         getDataPage(currentPage, pageSize) {
-            if (global.allBlog.length / this.pageSize > parseInt(global.allBlog.length / this.pageSize)) {
-                this.totalPage = parseInt(global.allBlog.length / this.pageSize) + 1;
+            if (this.allBlog.length / this.pageSize > parseInt(this.allBlog.length / this.pageSize)) {
+                this.totalPage = parseInt(this.allBlog.length / this.pageSize) + 1;
             } else {
-                this.totalPage = parseInt(global.allBlog.length / this.pageSize);
+                this.totalPage = parseInt(this.allBlog.length / this.pageSize);
             }
             var tempBlogData = [];
             var start = currentPage*pageSize-pageSize;
             var end=start+pageSize;
             if (currentPage==this.totalPage){
-                end=global.allBlog.length;
+                end=this.allBlog.length;
             }
             for (var i=start;i<end;i++){
-                tempBlogData.push(global.allBlog[i]);
+                tempBlogData.push(this.allBlog[i]);
             }
             this.tableData = tempBlogData;
+          
             if (this.currentPage == this.totalPage) {
                 this.nextShow = false;
             } else {
@@ -99,9 +102,9 @@ export default {
         },
         getLunBo() {
             var temp = [];
-            for (var i = 0; i < global.allBlog.length; i++) {
-                if (global.allBlog[i].lunbo) {
-                    temp.push(global.allBlog[i]);
+            for (var i = 0; i < this.allBlog.length; i++) {
+                if (this.allBlog[i].lunbo) {
+                    temp.push(this.allBlog[i]);
                 }
             }
             this.lunbo = temp;
@@ -128,9 +131,15 @@ export default {
             }
         }
     },
+    
     mounted() {
-        this.getDataPage(this.currentPage, this.pageSize);
-        this.getLunBo();
+        const self = this;
+        axios.get("/post/list").then(function(respon){
+            self.allBlog = respon.data.data
+            self.getDataPage(self.currentPage, self.pageSize);
+            self.getLunBo();
+        })
+       
     }
 }
 </script>

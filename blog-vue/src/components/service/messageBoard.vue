@@ -4,13 +4,10 @@
             style="margin-bottom:10px;margin-top:10px;float:left;width:97%;margin-left:1.5%;font-size:19px;height:30px;line-height:20px;border-bottom:1px solid #DCDFE6;">
             <div style="margin-left:10px;margin-right:10px;">留言板</div>
         </div>
-        <el-input disabled style="width:97%;margin-left:1.5%;" type="textarea" v-model="message.content" :rows="5"
+        <el-input style="width:97%;margin-left:1.5%;" type="textarea" v-model="message.content" :rows="5"
             placeholder="请输入留言内容"></el-input>
         <div style="float:left;width:97%;margin-left:1.5%;margin-top: 10px;margin-bottom: 10px;">
-            <el-input disabled style="float:left;width:260px;" placeholder="请输入昵称" v-model="message.name"></el-input>
-            <el-input disabled style="float:left;width:340px;margin-left: 20px;" placeholder="请输入邮箱，非必填"
-                v-model="message.email"></el-input>
-            <el-button :disabled="true" style="margin-left: 20px;float:right;" type="primary">发表留言</el-button>
+            <el-button style="margin-left: 20px;float:right;" type="primary" @click="postMessage()">发表留言</el-button>
         </div>
         <div style="border-top:2px solid #1abc9c;height: 10px;width: 100%;float: left;"></div>
         <div style="border-bottom:1px solid #DCDFE6;float:left;width:100%;margin-bottom: 10px;background: white;"
@@ -24,7 +21,7 @@
                     {{ item.name }}
                 </div>
                 <div style="width:100%;height: 20px;line-height: 20px;font-size: 12px;">
-                    {{ item.createtime }}
+                    {{ item.createTime }}
                 </div>
                 <div style="margin-bottom: 5px;width:100%;min-height: 50px;font-size: 14px;line-height: 20px;">
                     {{ item.content }}
@@ -34,50 +31,54 @@
     </div>
 </template>
 <script>
+import axios from 'axios';
 import formatDate from '../../utils/dateUtil.js';
+import {getlocalStorage} from "../../utils/localStorageUtil.js";
 export default {
     data() {
         return {
             message: {
-                content: "",
-                name: "",
-                email: ""
+                content: ""
             },
-            tableData: [
-                {
-                    "name": "Java十点半",
-                    "content": "源码、论文（包查重，提供查重报告）、答辩ppt、讲解，一条龙服务。",
-                    "createtime": "2023-06-20 17:20:32"
-                },
-                {
-                    "name": "Java十点半",
-                    "content": "大家有做毕设需求可以找我",
-                    "createtime": "2023-06-15 18:10:20"
-                },
-                {
-                    "name": "Java十点半",
-                    "content": "留言板和博客留言暂时关闭~",
-                    "createtime": "2023-06-07 15:44:34"
-                }
-            ],
+            pageSize:5,
+            tableData: []
         };
     },
     methods: {
-        getMessagePage() {
-            that.tableData = response.data.data;
-            that.total = response.data.count;
-            for (var i = 0; i < that.tableData.length; i++) {
-                that.tableData[i].createtime = formatDate(new Date(that.tableData[i].createtime), 'yyyy-MM-dd hh:mm:ss');
+        getMessagePage(response) {
+            this.tableData = response.data.data;
+            this.total = response.data.count;
+            for (var i = 0; i < this.tableData.length; i++) {
+                this.tableData[i].createTime = formatDate(new Date(this.tableData[i].createTime), 'yyyy-MM-dd hh:mm:ss');
             }
-            if (response.data.count / that.pageSize > parseInt(response.data.count / that.pageSize)) {
-                that.totalPage = parseInt(response.data.count / that.pageSize) + 1;
+            if (response.data.count / this.pageSize > parseInt(response.data.count / this.pageSize)) {
+                this.totalPage = parseInt(response.data.count / this.pageSize) + 1;
             } else {
-                that.totalPage = parseInt(response.data.count / that.pageSize);
+                this.totalPage = parseInt(response.data.count / this.pageSize);
             }
+        },
+
+        postMessage(){
+            const self = this
+            let uid = getlocalStorage("uid");
+
+            axios.post("/message/post",{
+                userId:uid,
+                content:this.message.content
+            }).then(function(response){
+                self.fetchData();
+            });
+        },
+
+        fetchData(){
+            const self = this
+            axios.get("/message/list").then(function(response){
+                self.getMessagePage(response);
+            })
         }
     },
     mounted() {
-        this.getMessagePage();
+       this.fetchData();
     }
 }
 </script>

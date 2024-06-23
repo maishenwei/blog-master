@@ -11,6 +11,11 @@ import axios from './utils/axiosInterceptors.js';
 import * as echarts from 'echarts';
 import { getToken } from '@/utils/token'
 
+import { VueQuillEditor } from 'vue-quill-editor';
+import 'quill/dist/quill.core.css';
+import 'quill/dist/quill.snow.css';
+import 'quill/dist/quill.bubble.css';
+
 Vue.prototype.$echarts = echarts
 Vue.config.productionTip = false
 // 配置 Vue 插件
@@ -24,7 +29,7 @@ ElementUI.Dialog.props.closeOnClickModal.default = false;
 
 // 全局挂载路由导航守卫： 验证用户是否登录
 router.beforeEach((to, from, next) => {
-  if (to.name !== 'login' && !getToken())  next('/login')   // 如果用户不是访问登录页而且没有登录，则强制跳转到登录页
+  if (to.name !== 'login' && to.name !== 'register' && !getToken())  next('/login')   // 如果用户不是访问登录页而且没有登录，则强制跳转到登录页
   else next()
 })
 

@@ -1,4 +1,4 @@
-const allBlog = [
+var allBlog = [
     {
         "id": "3",
         "title": "知识分享刷题小程序",
@@ -61,6 +61,5 @@ const levelName = [
 
 
 export default {
-    allBlog,
     levelName
 };
